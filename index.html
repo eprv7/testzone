@@ -7,19 +7,41 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main class="page">
-      <section class="card">
-        <p class="eyebrow">Placeholder</p>
-        <h1>Empty website</h1>
-        <p class="subtitle">
-          This is a simple dummy landing page ready for you to build on.
-        </p>
-        <div class="actions">
-          <button type="button">Primary action</button>
-          <button type="button" class="secondary">Secondary</button>
+    <div id="auth-screen" class="auth-screen">
+      <div class="auth-box">
+        <p class="eyebrow">Protected access</p>
+        <h1>Enter password</h1>
+        <p class="subtitle">This site is hidden behind a password.</p>
+
+        <div class="password-form">
+          <input
+            id="password-input"
+            type="password"
+            placeholder="Password"
+            aria-label="Password"
+          />
+          <button id="unlock-button" type="button">Unlock</button>
         </div>
-      </section>
-    </main>
+
+        <p id="error-message" class="error-message" aria-live="polite"></p>
+      </div>
+    </div>
+
+    <div id="site-content" class="hidden">
+      <main class="page">
+        <section class="card">
+          <p class="eyebrow">Placeholder</p>
+          <h1>Empty website</h1>
+          <p class="subtitle">
+            This is a simple dummy landing page ready for you to build on.
+          </p>
+          <div class="actions">
+            <button type="button">Primary action</button>
+            <button type="button" class="secondary">Secondary</button>
+          </div>
+        </section>
+      </main>
+    </div>
 
     <script src="script.js"></script>
   </body>
